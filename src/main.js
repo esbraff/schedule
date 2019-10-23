@@ -1,6 +1,9 @@
 import Vue from 'vue';
 
+import VueOffline from 'vue-offline';
 import HeyUI from 'heyui';
+
+Vue.use(VueOffline);
 Vue.use(HeyUI);
 
 import "heyui/themes/index.less";
