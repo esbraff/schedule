@@ -28,12 +28,6 @@
         </div>
       </div>
     </div>
-    <div id="schedule-item-list" style="color: gray" v-else>
-      <br/>
-      Ничего не найдено
-      <br/>
-      <br/>
-    </div>
   </div>
 </template>
 
@@ -173,7 +167,7 @@ export default {
 
 .schedule-item {
   border-bottom: 2px lightgray solid;
-  display:inline-block;
+  display: inline-block;
   width: 100%;
 }
 
