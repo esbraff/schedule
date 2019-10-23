@@ -118,6 +118,7 @@ export default {
           : temp.denominator.concat(temp.numerator);
 
         this.lecturers = Object.keys(temp.lecturers);
+        this.dennum = dennum;
 
         cb(this.lecturers.slice(0, 5));
       }
