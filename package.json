@@ -12,7 +12,8 @@
     "heyui": "^1.25.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-offline": "^2.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
