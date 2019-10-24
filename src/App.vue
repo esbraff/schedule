@@ -112,7 +112,10 @@ export default {
                   timecode: new Date(0, 0, time[2], parseInt(time[0]), parseInt(time[1])),
                 });
               }
-        
+      
+        temp.denominator.sort((a, b) => (a.timecode > b.timecode) ? 1 : ((b.timecode > a.timecode) ? -1 : 0));
+        temp.numerator.sort((a, b) => (a.timecode > b.timecode) ? 1 : ((b.timecode > a.timecode) ? -1 : 0));
+
         this.schedule = dennum === 'Числитель'
           ? temp.numerator.concat(temp.denominator)
           : temp.denominator.concat(temp.numerator);
@@ -153,13 +156,22 @@ export default {
   margin: 0 auto;
   margin-top: 25px;
   height: auto;
-  width: 65%;
+  width: 80%;
   border: 1px lightgray solid;
   max-height: 90vh;
   overflow-y: auto;
   border-radius: 5px;
-  display: table;
   padding: 5px;
+}
+
+@media (max-width: 600px) {
+  #schedule-item-list {
+    width: 90%;
+  }
+
+  #form {
+    width: 80%;
+  }
 }
 
 .h-panel-title.schedule-item-type {
